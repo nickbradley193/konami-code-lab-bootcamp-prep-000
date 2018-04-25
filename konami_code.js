@@ -13,6 +13,7 @@ function init() {
       
       if (index === code.length) {
         alert("Wow... you played some Konami games. Good for you?");
+        index = 0;
       }
     } else {
       index = 0;
