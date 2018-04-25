@@ -6,7 +6,9 @@ function init() {
   // Write your JavaScript code inside the init() function
   let index = 0;
   
-  document.body.addEventListener('keydown', listen(event));
+  document.body.addEventListener('keydown', function(event) {
+    
+  });
   
   
 }
