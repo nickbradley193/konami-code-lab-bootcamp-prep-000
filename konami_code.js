@@ -7,9 +7,17 @@ function init() {
   let index = 0;
   
   document.body.addEventListener('keydown', function(event) {
-    
+    const key = parseInt(event.detail || event.which);
+    if (key === code[index]) {
+      index ++;
+      
+      if (index === code.length) {
+        alert("Wow... you played some Konami games. Good for you?");
+      }
+    } else {
+      index = 0;
+    }
   });
-  
   
 }
 
